@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/v1")
 public class MessageController {
-    private RabbitMQProducer rabbitMQProducer;
+    private final RabbitMQProducer rabbitMQProducer;
 
     public MessageController(RabbitMQProducer rabbitMQProducer) {
         this.rabbitMQProducer = rabbitMQProducer;
