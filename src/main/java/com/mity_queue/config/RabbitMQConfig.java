@@ -36,4 +36,8 @@ public class RabbitMQConfig {
   public Binding bind() {
     return BindingBuilder.bind(queue()).to(exchange()).with(routingKey);
   }
+  // Spring boot will autoconfigure these beans
+  // ConnectionFactory
+  // RabbitTemplate
+  // RabbitAdmin
 }
